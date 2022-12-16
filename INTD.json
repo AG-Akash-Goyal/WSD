@@ -1,0 +1,58 @@
+{
+  "IDW": {
+    "Customer": [
+      {
+        "C_ID": "C01",
+        "Name": "Akash Goyal",
+        "Age": 21,
+        "Gender": "M"
+      },
+      {
+        "C_ID": "C02",
+        "Name": "Amisha Sehgal",
+        "Age": 20,
+        "Gender": "F"
+      },
+      {
+        "C_ID": "C03",
+        "Name": "Mona Rani",
+        "Age": 21,
+        "Gender": "F"
+      },
+      {
+        "C_ID": "C04",
+        "Name": "Aman Goel",
+        "Age": 27,
+        "Gender": "M"
+      },
+      {
+        "C_ID": "C05",
+        "Name": "Ruchi Sultania",
+        "Age": 30,
+        "Gender": "F"
+      }
+    ],
+    "Design": [
+      {
+        "D_ID": "D01",
+        "DName":"Kitchen",
+        "Price": 23000
+      },
+      {
+        "D_ID": "D02",
+        "DName":"Washroom",
+        "Price": 9999
+      },
+      {
+        "D_ID": "D03",
+        "DName":"HAll",
+        "Price": 50000
+      },
+      {
+        "D_ID": "D04",
+        "DName":"Guest Room",
+        "Price": 19999
+      }
+    ]
+  }
+}
