@@ -1,0 +1,56 @@
+.box {
+    text-align: center;
+    width: fit-content;
+    margin-left: 2rem;
+    background-color: rgb(12, 234, 178);
+    border: 1px solid rgba(0, 0, 0, 0.377);
+    box-shadow: 3px 4px 6px rgb(123, 155, 79);
+    padding: 4rem;
+
+}
+
+.box1 {
+    text-align: center;
+    width: fit-content;
+    margin-left: 2rem;
+    background-color: rgb(8, 159, 230);
+    color: white;
+    border: 1px solid grey;
+    box-shadow: 3px 4px 6px rgb(127, 209, 13);
+    padding: 4rem;
+}
+
+.box2 {
+    text-align: center;
+    width: fit-content;
+    margin-left: 2rem;
+    background-color: rgb(39, 52, 235);
+    color: white;
+    border: 1px solid grey;
+    box-shadow: 3px 4px 6px rgb(35, 40, 28);
+    padding: 4rem;
+}
+
+.box3 {
+    text-align: center;
+    width: fit-content;
+    margin-left: 2rem;
+    background-color: rgb(3, 133, 44);
+    color: white;
+    border: 1px solid grey;
+    box-shadow: 3px 4px 6px rgb(35, 40, 28);
+    padding: 4rem;
+}
+
+.contain {
+    text-align: center;
+    width: fit-content;
+    display: flex;
+    background-color: blanchedalmond;
+    padding: 2rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
