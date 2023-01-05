@@ -1,0 +1,128 @@
+/* Variables */
+:root {
+    --prim-color: #c77b7b;
+}
+
+/* Common Attributes */
+body {
+    box-sizing: border-box;
+    background-color: var(--prim-color);
+}
+
+/* xs */
+@media(max-width: 576px) {
+    #login {
+        background-color: rgb(114, 211, 148);
+        border-radius: 1.5em;
+        padding: 3em;
+        width: 90vw;
+        margin-top: 15vh;
+    }
+
+    #loginForm {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+/* sm */
+@media(max-width: 768px) and (min-width: 576px) {
+    #login {
+        background-color: rgb(99, 176, 122);
+        border-radius: 1.5em;
+        padding: 3em;
+        width: 80vw;
+        margin-top: 18vh;
+    }
+
+    #loginForm {
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+}
+
+/* md */
+@media(max-width: 992px) and (min-width: 768px) {
+    #login {
+        background-color: rgb(63, 167, 105);
+        border-radius: 1.5em;
+        padding: 3em;
+        width: 60vw;
+        margin-top: 18vh;
+    }
+
+    #loginForm {
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+}
+
+/* lg */
+@media(max-width: 1200px) and (min-width: 993px) {
+    #carouselMain .carousel-item img {
+        max-height: min-content;
+    }
+
+    #login {
+        background-color: rgb(42, 156, 103);
+        border-radius: 1.5em;
+        padding: 3em;
+        width: 40vw;
+        margin-top: 18vh;
+    }
+
+    #loginForm {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+
+/* xl */
+@media(min-width: 1200px) {
+    #login {
+        background-color: rgba(119, 231, 151, 0.802);
+        border-radius: 1.5em;
+        padding: 3em;
+        width: 40vw;
+        margin-top: 18vh;
+    }
+
+    #loginForm {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+
+/* Index Html */
+#nav-logo {
+    width: 2.5em;
+    height: auto;
+}
+
+#login {
+    position: relative;
+    margin-bottom: 9.5em;
+}
+
+#sign-up {
+    position: absolute;
+    bottom: 3;
+    right: 1.2em;
+}
+
+#tableSection {
+    font-size: 1.1em;
+}
+
+#tableSection table {
+    background-color: rgb(234, 175, 86);
+}
+
+#tableSection table, #tableSection td, #tableSection th{
+    border: 1px solid;
+}
+
+#tableSection th{
+    cursor: pointer;
+    background-color: orange;
+}
