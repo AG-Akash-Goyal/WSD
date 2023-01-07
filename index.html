@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        h1{
+            text-align: center;
+        }
+
+        table,
+        th,
+        td {
+            border: 5px solid;
+            border-collapse: collapse;
+        }
+
+        .content {
+            margin-top: 15vh;
+            border: 10px solid;
+            width: max-content;
+            padding: 7%;
+            background-color: rgba(204, 195, 27, 0.716);
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+        }
+
+        .table {
+            display: flex;
+            justify-content: center;
+        }
+
+        #changetxt{
+            width: 98%;
+        }
+
+        .buttons{
+            width: 100%;
+            display: inline-flex;
+            justify-content: space-around;
+            gap: 30px;
+            border: 1px solid transparent;
+            margin-top: 1em;
+        }
+
+        th,td{
+            padding: 1em 3em 1em 3em;
+        }
+
+        th{
+            background-color: rgb(219, 70, 37);
+            color: rgb(255, 254, 254);
+            border-color: rgb(0, 0, 0);
+        }
+
+        td {
+            background-color: rgb(95, 206, 115);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <h1>DOM Parser</h1>
+        <div class="table">
+            <table>
+                <tr>
+                    <th>Name</th>
+                </tr>
+                <tr class="row">
+                    <td id="demo1"></td>
+                </tr>
+            </table>
+        </div>
+<br><br>
+        <p id="rm"></p>
+
+        <input type="text" name="" id="changetxt">
+        <br>
+        <div class="buttons">
+            <button onclick="change()">Change</button>
+            <button onclick="removeElem()">Remove</button>
+            <button onclick="traverse()">Show Sibiling</button>
+        </div>
+
+        <p id="demo"></p>
+    </div>
+
+    <script>
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                myFunction(this);
+            }
+        };
+        xhttp.open("GET", "test1.xml", true);
+        xhttp.send();
+
+        function myFunction(xml) {
+            var xmlDoc = xml.responseXML;
+            var x;
+            tr = xmlDoc.documentElement.childNodes;
+            x = xmlDoc.getElementsByTagName("name")[0].childNodes[0];
+            document.getElementById("demo1").innerHTML = x.nodeValue;
+        }
+
+        function change() {
+            document.getElementById("rm").innerText = ""
+            x = document.getElementById('changetxt').value
+            document.getElementById("demo1").innerText = x
+            document.getElementById("changetxt").value = ""
+        }
+
+        function removeElem() {
+            rmv = document.getElementById('demo1').innerText
+            document.getElementById("demo1").innerText = ""
+
+            document.getElementById("rm").innerText = "Removed node value: " + rmv
+        }
+
+        function traverse() {
+            txt = ""
+            for (i = 0; i < tr.length; i++) {
+                if (tr[i].nodeType == 1) {
+                    txt += tr[i].nodeName + "<br>";
+                }
+            }
+            document.getElementById("demo").innerHTML = txt;
+        }
+    </script>
+    <style>
+        body {
+          background-image: url('img6.jpeg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: 100% 100%;
+        }
+        </style>
+</body>
+
+</html>
